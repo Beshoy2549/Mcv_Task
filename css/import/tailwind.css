@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  Colors & Background */
+@variants hover,
+focus {
+        .color-main {
+                color: #0f7cff
+        }
+
+        .color-secondary {
+                color: #334258
+        }
+
+        .bg-color-main {
+                background: #0f7cff
+        }
+
+        .bg-color-secondary {
+                background: #334258
+        }
+}
+
+@responsive {
+
+        /* Width with % */
+
+        .wp-30 {
+                width: 30%
+        }
+
+        .wp-50 {
+                width: 50%
+        }
+
+        .wp-70 {
+                width: 70%
+        }
+
+        .wp-90 {
+                width: 90%
+        }
+
+        /* Height with % */
+
+        /*  Top */
+
+        /*  Minus */
+
+        .top-m-2 {
+                top: -0.5em;
+        }
+
+        /*  Bottom */
+
+        /*  Minus */
+
+        /*  Left */
+
+        .left-5 {
+                left: 3em;
+        }
+
+        /*  Minus */
+
+        /*  Right */
+
+        .right-4 {
+                right: 2em;
+        }
+
+        /*  Minus */
+}

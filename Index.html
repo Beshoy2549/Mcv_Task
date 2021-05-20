@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Software Development agency">
+  <meta name="keywords" content="HTML, CSS, JavaScript, UI, UX, Application, Website, Develop, Coding, Social media">
+  <meta name="author" content="Ustics">
+
+  <link rel="icon" href="images/logoTitle.ico" />
+  <!-- Tailwind -->
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <!-- Slick  Slider-->
+  <link rel="stylesheet" href="css/slick.css" />
+  <!-- aos Scroll animation-->
+  <link rel="stylesheet" href="css/aos.css" />
+  <!-- Custom Style-->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Custom Animation -->
+  <link rel="stylesheet" href="css/animation.css" />
+  <title>Ustics</title>
+</head>
+
+<body class="ustics-font">
+  <!-- Ustics Header Start -->
+  <header id="usticsHome" class="usticsHeader activeCursorAnimate cursor-light color-main text-center">
+    <!-- Ustics Navar Start -->
+    <nav id="usticsNav" class="usticsNav p-4 absolute  z-10 w-full">
+      <div class="container m-auto">
+        <div class="flex items-center">
+          <!-- Ustics Nav Logo -->
+          <a class="usticsNavLogo link" href="/">
+            <img src="images/logo.png" class="w-12" alt="Ustics Logo" />
+          </a>
+          <!-- Ustics Nav Items -->
+          <div class="usticsNavItems hidden ml-auto relative font-medium xl:flex lg:flex md:flex sm:hidden xs:hidden">
+            <a onclick="$('body').animatescroll({easing:'easeInOutBack',scrollSpeed:1500})" href="javascript:void(0)"
+              class="NavItem link inline-block w-24 py-2 my-2">Home</a>
+            <a onclick="$('#usticsAboutUs').animatescroll({padding:100,easing:'easeInOutBack',scrollSpeed:1500})"
+              href="javascript:void(0)" class="NavItem link inline-block w-24 py-2 my-2">About Us</a>
+            <a onclick="$('#usticsServices').animatescroll({padding:100,easing:'easeInOutBack',scrollSpeed:1500})"
+              href="javascript:void(0)" class="NavItem link inline-block w-24 py-2 my-2">Services</a>
+            <a onclick="$('#usticsFeatures').animatescroll({padding:100,easing:'easeInOutBack',scrollSpeed:1500})"
+              href="javascript:void(0)" class="NavItem link inline-block w-24 py-2 my-2">Features</a>
+            <a onclick="$('#usticsProjects').animatescroll({padding:100,easing:'easeInOutBack',scrollSpeed:1500})"
+              href="javascript:void(0)" class="NavItem link inline-block w-24 py-2 my-2">Projects</a>
+            <a onclick="$('#usticsContactUs').animatescroll({padding:100,easing:'easeInOutBack',scrollSpeed:1500})"
+              href="javascript:void(0)" class="NavItem link inline-block w-24 py-2 my-2">Contact us</a>
+            <!-- Nav Items Arrow -->
+            <span class="navLine w-24 text-center absolute left-0 top-m-2">
+              <i class="fas fa-angle-down"></i>
+            </span>
+          </div>
+          <!-- Side Nav Toggle Start -->
+          <a href="javascript:void(0)" id="sideNavOpen"
+            class="usticsSideNavToggle absolute right-4 p-4 w-20 inline-block xl:hidden lg:hidden md:hidden sm:inline-block xs:inline-block">
+            <div class="sideToggleContainer float-left w-20 h-16 AnimatedWrap flex justify-center items-center ">
+              <div class="sideToggle AnimatedElement  w-6">
+                <span class="bg-color-main  block w-full"></span>
+                <span class="bg-color-main  block w-full my-1"></span>
+                <span class="bg-color-main  block w-full"></span>
+              </div>
+            </div>
+          </a>
+          <!-- Side Nav Toggle End -->
+        </div>
+      </div>
+    </nav>
+    <!-- Ustics Navar  End -->
+    <!-- Ustics side navbar start-->
+    <div id="sideNav"
+      class="usticsSideNav fixed bg-color-secondary right-0 top-0 h-screen z-50 xs:w-full sm:w-8/12 md:hidden lg:hidden xl:hidden hidden">
+      <div class="container  p-12 h-full">
+        <span id="sideNavClose" href="javascript:void(0)"
+          class="closeSideNav AnimatedWrap relative w-16 h-16 block py-6 cursor-pointer ml-auto">
+          <i class="AnimatedElement relative block w-full h-full"></i>
+        </span>
+        <nav class="sideNavItems text-left py-8 pb-0 px-4">
+          <ul class="navItems text-white font-light text-xl">
+            <li class="item block mb-8">
+              <a onclick="$('body').animatescroll({easing:'easeInOutBack',scrollSpeed:1500})" href="javascript:void(0)"
+                class="relative inline-block hover:color-main">Home</a>
+            </li>
+            <li class="item block mb-8">
+              <a onclick="$('#usticsAboutUs').animatescroll({padding:100,easing:'easeInOutBack',scrollSpeed:1500})"
+                href="javascript:void(0)" class="relative inline-block hover:color-main">About us</a>
+            </li>
+            <li class="item block mb-8">
+              <a onclick="$('#usticsServices').animatescroll({padding:100,easing:'easeInOutBack',scrollSpeed:1500})"
+                href="javascript:void(0)" class="relative inline-block hover:color-main">Services</a>
+            </li>
+            <li class="item block mb-8">
+              <a onclick="$('#usticsFeatures').animatescroll({padding:100,easing:'easeInOutBack',scrollSpeed:1500})"
+                href="javascript:void(0)" class="relative inline-block hover:color-main">Features</a>
+            </li>
+            <li class="item block mb-8">
+              <a onclick="$('#usticsProjects').animatescroll({padding:100,easing:'easeInOutBack',scrollSpeed:1500})"
+                href="javascript:void(0)" class="relative inline-block hover:color-main">Projects</a>
+            </li>
+            <li class="item block mb-8">
+              <a onclick="$('#usticsContactUs').animatescroll({padding:100,easing:'easeInOutBack',scrollSpeed:1500})"
+                href="javascript:void(0)" class="relative inline-block hover:color-main">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sideNavFooter">
+          <ul class="SideNavContactUs text-white flex">
+            <li class="ContactUsIcons">
+              <a href="javascript:void(0)" class="AnimatedWrap link inline-block m-2 align-middle py-3 w-8 h-12">
+                <i class="AnimatedElement fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="ContactUsIcons ">
+              <a href="javascript:void(0)" class="AnimatedWrap link inline-block m-2 align-middle py-3 w-8 h-12">
+                <i class=" AnimatedElement fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="ContactUsIcons ">
+              <a href="javascript:void(0)" class="AnimatedWrap link inline-block m-2 align-middle py-3 w-8 h-12">
+                <i class=" AnimatedElement fab fa-linkedin-in"> </i>
+              </a>
+            </li>
+          </ul>
+          <p class="usticsCopyRight text-left text-white my-4">
+            © 2020 <a href="https://ustics.com/" class="hover:underline">Ustics.com</a> All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Ustics side navbar end-->
+  </header>
+  <!-- Ustics Header End -->
+  <!-- Ustics Slider Start -->
+  <section id="usticsSlider" class="usticsSlider relative cursor-light h-screen w-screen">
+    <div class="sliderSlides absolute">
+      <div class="usticsSlide">
+        <div class="slideContent relative w-screen h-screen">
+          <div class="container slideContainer">
+            <div class="content xl:w-6/12 lg:w-6/12 md:w-10/12 sm:w-full xs:w-full">
+              <h1
+                class="contentHeader relative text-white xl:text-3xl lg:text-3xl md:text-3xl sm:text-3xl wp-90  xs:text-2xl">
+                <span class="block font-medium">Ustics</span>
+                Software Development
+              </h1>
+              <p class="contentInfo usticsAnimationST text-white font-medium wp-70 text-justify mt-8 text-sm mt-12">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s.
+              </p>
+              <a href="javascript:void(0)" class="contentLink link"> Learn
+                more </a>
+            </div>
+            <div class="content xl:w-6/12 xl:block lg:w-6/12 lg:block md:hidden sm:hidden xs:hidden" id="scene">
+              <div class="contentAnimation" data-depth="0.2">
+                <svg class="slideShape" viewBox="-100 -80 700 700" xmlns="http://www.w3.org/2000/svg">
+                  <g transform="translate(275,320)">
+                    <path
+                      d="M153.1,-93.4C190.8,-23.2,208.4,53.7,179.6,104.2C150.7,154.7,75.3,178.8,-4.2,181.3C-83.7,183.7,-167.4,164.3,-206.5,107.9C-245.7,51.5,-240.2,-42,-198.3,-114.7C-156.5,-187.3,-78.2,-239.2,-10.2,-233.2C57.7,-227.3,115.5,-163.7,153.1,-93.4Z" />
+                  </g>
+                </svg>
+              </div>
+              <div class="contentAnimation" data-depth="0.4">
+                <svg class="slideShape" viewBox="-100 -80 700 700" xmlns="http://www.w3.org/2000/svg">
+                  <g transform="translate(275,320)">
+                    <path
+                      d="M153.1,-93.4C190.8,-23.2,208.4,53.7,179.6,104.2C150.7,154.7,75.3,178.8,-4.2,181.3C-83.7,183.7,-167.4,164.3,-206.5,107.9C-245.7,51.5,-240.2,-42,-198.3,-114.7C-156.5,-187.3,-78.2,-239.2,-10.2,-233.2C57.7,-227.3,115.5,-163.7,153.1,-93.4Z" />
+                  </g>
+                </svg>
+              </div>
+              <div class="contentAnimation" data-depth="0.6">
+                <svg class="slideShape" viewBox="-100 -80 700 700" xmlns="http://www.w3.org/2000/svg">
+                  <clipPath id="shapeClip" transform="translate(275,320)">
+                    <path
+                      d="M153.1,-93.4C190.8,-23.2,208.4,53.7,179.6,104.2C150.7,154.7,75.3,178.8,-4.2,181.3C-83.7,183.7,-167.4,164.3,-206.5,107.9C-245.7,51.5,-240.2,-42,-198.3,-114.7C-156.5,-187.3,-78.2,-239.2,-10.2,-233.2C57.7,-227.3,115.5,-163.7,153.1,-93.4Z" />
+                  </clipPath>
+                  <image clip-path="url(#shapeClip)" width="100%" height="100%"
+                    xlink:href="images/max-duzij-qAjJk-un3BI-unsplash.jpg">
+                  </image>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slideContent relative w-screen h-screen">
+          <div class="container slideContainer">
+            <div class="content xl:w-12/12 lg:w-12/12">
+              <h2 id="slideContentHeader">
+              </h2>
+              <p id="slideContentDescription" class="contentInfo color-secondary text-gray-700 wp-50 mt-4">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum
+                has been the
+                industry's standard dummy text ever since the 1500s.
+              </p>
+              <a href="javascript:void(0)" class="contentLink link">Learn
+                more</a>
+            </div>
+          </div>
+        </div>
+        <div class="slideContent relative w-screen h-screen">
+          <div class="container slideContainer">
+            <video id="slideVideo" class="bgVideo absolute left-0 top-0 w-screen h-screen opacity-50" muted loop
+              autoplay>
+              <source src="images/sliderSlide3.mp4" type="video/mp4">
+            </video>
+            <div class="content mx-auto">
+              <h2
+                class="header usticsCare text-center usticsAnimationTF color-secondary xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl xs:text-5xl xs:font-bold">
+                We <span class="usticsAnimationLF inline-block">care</span>
+                about everything
+              </h2>
+              <div class="flex usticsFeatures justify-center my-12">
+                <div class="feature xl:w-3/12 lg:w-3/12 md:w-3/12 sm:w-5/12 xs:w-5/12 sm:py-12 xs:py-10">
+                  <h4 class="font-semibold color-main">Clean code </h4>
+                  <p class="text-gray-600 text-sm">We care about clean code</p>
+                </div>
+                <div class="feature xl:w-3/12 lg:w-3/12 md:w-3/12 sm:w-5/12 xs:w-5/12 sm:py-12 xs:py-10">
+                  <h4 class="font-semibold color-main">Clean code </h4>
+                  <p class="text-gray-600 text-sm">We care about clean code</p>
+                </div>
+                <div class="feature xl:w-3/12 lg:w-3/12 md:w-3/12 sm:w-5/12 xs:w-5/12 sm:py-12 xs:py-10">
+                  <h4 class="font-semibold color-main">Clean code </h4>
+                  <p class="text-gray-600 text-sm">We care about clean code</p>
+                </div>
+                <div class="feature xl:w-3/12 lg:w-3/12 md:w-3/12 sm:w-5/12 xs:w-5/12 sm:py-12 xs:py-10">
+                  <h4 class="font-semibold color-main">Clean code </h4>
+                  <p class="text-gray-600 text-sm">We care about clean code</p>
+                </div>
+              </div>
+              <div class="text-center">
+                <a href="javascript:void(0)" class="contentLink styleTwo link">
+                  Learn more </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sliderIndicators" class="hide-cursor flex left-5 justify-center items-center absolute color-main">
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <clipPath id="headerPath">
+        <path fill="#0099ff" fill-opacity="1"
+          d="M0-279.7v767.5v114l60-9.5c60-9.7,180-28.4,300-26.1c120,2.2,240,26.3,360,33.3c120,7.3,240-2.5,360-23.8  c120-21.5,240-54.5,300-71.2l60-16.6v-767.5H0z">
+        </path>
+      </clipPath>
+    </svg>
+  </section>
+  <!-- Ustics Slider End -->
+  <!-- Ustics AboutUs End -->
+  <div id="usticsAboutUs" class="usticsAboutUs pt-12">
+    <div class="container">
+      <div class="basicInfo flex flex-wrap justify-around items-center">
+        <div data-aos="fade-right"
+          class="ourBrand w-10/12 mb-12 text-center  items-center sm:w-10/12 md:w-5/12 md:text-left lg:w-4/12 xl:w-6/12">
+          <h2 class="brandHeader color-main font-medium text-lg mb-4">Basic info about about us</h2>
+          <h1 class="brandInfo text-4xl color-secondary md:text-4xl lg:text-4xl xl:text-5xl">Ustics - A Creative
+            Software
+            Development <br> in Cairo,
+            Egypt</h1>
+        </div>
+        <div class="infoAboutUs w-8/12 md:w-6/12" data-aos="fade-left">
+          <p class="moreInfo text-justify text-gray-700">
+            It is a long established fact that a reader will be distracted by the readable content
+            of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content here', making it look like readable
+            English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+            text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
+            have
+            evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          </p>
+        </div>
+      </div>
+      <div class="ourServices flex flex-wrap justify-center">
+        <div class="service w-10/12 sm:w-6/12 lg:w-4/12" data-aos="fade-up" data-aos-delay="100">
+          <div class="content p-4 m-4">
+            <span class="text-6xl font-medium color-main">01.</span>
+            <h3 class="my-5 text-xl font-semibold">Service</h3>
+            <p class="text-gray-600">It is a long established fact that a reader will be distracted by the readable
+              content of a page when
+              looking at its layout.</p>
+          </div>
+        </div>
+        <div class="service w-10/12 sm:w-6/12 lg:w-4/12" data-aos="fade-up" data-aos-delay="300">
+          <div class="content p-4 m-4">
+            <span class="text-6xl font-medium color-main">02.</span>
+            <h3 class="my-5 text-xl font-semibold">Service</h3>
+            <p class="text-gray-600">It is a long established fact that a reader will be distracted by the readable
+              content of a page when
+              looking at its layout.</p>
+          </div>
+        </div>
+        <div class="service w-10/12 sm:w-6/12 lg:w-4/12" data-aos="fade-up" data-aos-delay="500">
+          <div class="content p-4 m-4">
+            <span class="text-6xl font-medium color-main">03.</span>
+            <h3 class="my-5 text-xl font-semibold">Service</h3>
+            <p class="text-gray-600">It is a long established fact that a reader will be distracted by the readable
+              content of a page when
+              looking at its layout.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Ustics AboutUs End -->
+  <!-- Ustics Services Start -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 98">
+    <path fill="#f3f8ff" fill-opacity="1" d="M0,11v77.3h36.9v-9.7h36.9V69h37v-9.7h36.9V98h36.9V78.7h36.9v-58h37V98h36.9v-9.7h36.9v-29h36.9v-29h37v29
+      h36.9V40H480v48.3h36.9V20.7h36.9V40h37V11h36.9v48.3h36.9v19.3h36.9V59.3h37V20.7h36.9V11h36.9v87h36.9V11h37v67.7h36.9v-58H960V11
+      h36.9v9.7h36.9l0,0h37V40h36.9v38.7h36.9v-58h36.9v29h37V30.3h36.9v58h36.9V69h36.9V11h37v19.3h36.9v48.3h36.9V98h-36.9l0,0h-36.9
+      l0,0h-37l0,0h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0h-36.9l0,0H960l0,0h-36.9l0,0h-36.9l0,0
+      h-37l0,0h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0h-36.9l0,0H480l0,0h-36.9l0,0h-36.9l0,0h-37
+      l0,0h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0H36.9l0,0H0l0,0V11z">
+    </path>
+  </svg>
+  <div id="usticsServices" class="usticsServices text-center py-8">
+    <div class=" container">
+      <h2 class="featuresHeader text-4xl font-medium color-secondary">Our Services</h2>
+      <div class="featuresContent flex flex-wrap justify-center px-0 my-12">
+        <div class="feature w-10/12 sm:w-5/12 lg:wp-30 xl:w-3/12 text-center p-4" data-aos="zoom-in-up"
+          data-aos-delay="150">
+          <div class="content px-4 py-8">
+            <i class="featureIcon far fa-comment-alt color-main text-6xl"></i>
+            <h3 class="featureHeader text-xl font-medium mt-5 mb-3 color-secondary">Collaboration</h3>
+            <p class="featureDescription text-sm text-gray-700">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium suscipit
+              eos officia voluptas praesentium !
+            </p>
+          </div>
+        </div>
+        <div class="feature w-10/12 sm:w-5/12 lg:wp-30 xl:w-3/12 text-center p-4" data-aos="zoom-in-up"
+          data-aos-delay="250">
+          <div class="content px-4 py-8">
+            <i class="featureIcon fas fa-tasks color-main text-6xl"></i>
+            <h3 class="featureHeader text-xl font-medium mt-5 mb-3 color-secondary">Task Management </h3>
+            <p class="featureDescription text-sm text-gray-700">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium suscipit
+              eos officia voluptas praesentium !
+            </p>
+          </div>
+        </div>
+        <div class="feature w-10/12 sm:w-5/12 lg:wp-30 xl:w-3/12 text-center p-4" data-aos="zoom-in-up"
+          data-aos-delay="350">
+          <div class="content px-4 py-8">
+            <i class="featureIcon fas fa-stopwatch color-main text-6xl"></i>
+            <h3 class="featureHeader text-xl font-medium mt-5 mb-3 color-secondary">Time Tracking</h3>
+            <p class="featureDescription text-sm text-gray-700">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium suscipit
+              eos officia voluptas praesentium !
+            </p>
+          </div>
+        </div>
+        <div class="feature w-10/12 sm:w-5/12 lg:wp-30 xl:w-3/12 text-center p-4" data-aos="zoom-in-up"
+          data-aos-delay="450">
+          <div class="content px-4 py-8">
+            <i class="featureIcon fas fa-file-pdf color-main text-6xl"></i>
+            <h3 class="featureHeader text-xl font-medium mt-5 mb-3 color-secondary">Advanced Reports</h3>
+            <p class="featureDescription text-sm text-gray-700">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium suscipit
+              eos officia voluptas praesentium !
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0)"
+        class="moreFeatures bg-color-main text-white inline-block rounded-full py-3 px-12 hover:bg-color-secondary transition-all duration-300 ease-out">Learn
+        More</a>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 174">
+    <path fill="#f3f8ff" fill-opacity="1" d="M0,87V9.7h36.9v9.7h36.9V29h37v9.7h36.9V0h36.9v19.3h36.9v58h37V0h36.9v9.7h36.9v29h36.9v29h37v-29h36.9V58H480
+      V9.7h36.9v67.7h36.9V58h37v29h36.9V38.7h36.9V19.3h36.9v19.3h37v38.7h36.9V87h36.9V0h36.9v87h37V19.3h36.9v58H960V87h36.9v-9.7h36.9
+      l0,0h37V58h36.9V19.3h36.9v58h36.9v-29h37v19.3h36.9v-58h36.9V29h36.9v58h37V67.7h36.9V19.3h36.9V0h-36.9l0,0h-36.9l0,0h-37l0,0
+      h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0h-36.9l0,0H960l0,0h-36.9l0,0h-36.9l0,0h-37l0,0
+      h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0h-36.9l0,0H480l0,0h-36.9l0,0h-36.9l0,0h-37l0,0
+      h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0h-36.9l0,0h-36.9l0,0h-36.9l0,0h-37l0,0H36.9l0,0H0l0,0V87z">
+    </path>
+  </svg>
+  <!-- Ustics Services End -->
+  <!-- Ustics Features Start -->
+  <div id="usticsFeatures" class="usticsFeatures text-center py-12">
+    <div class="container">
+      <h2 class="featuresHeader text-4xl font-semibold">Code Features</h2>
+      <div class="featuresContent flex flex-wrap justify-center px-0 my-6">
+        <div class="feature w-10/12 sm:w-6/12 lg:w-4/12 xl:w-3/12 text-center p-5" data-aos="fade-right">
+          <div class="content bg-white shadow px-4 py-8">
+            <img class="featureImg" src="images/feature01.jpg" alt="Ustics feature">
+            <h2 class="featureHeader text-xl font-semibold my-3 color-secondary">Features</h2>
+            <p class="featureDescription text-sm text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint voluptates enim eum quidem
+              recusandae ipsum possimus necessitatibus rerum dicta facere!
+            </p>
+          </div>
+        </div>
+        <div class="feature w-10/12 sm:w-6/12 lg:w-4/12 xl:w-3/12 text-center p-5" data-aos="fade-up">
+          <div class="content bg-white shadow px-4 py-8">
+            <img class="featureImg" src="images/feature02.jpg" alt="Ustics feature">
+            <h2 class="featureHeader text-xl font-semibold my-3 color-secondary">Features</h2>
+            <p class="featureDescription text-sm text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint voluptates enim eum quidem
+              recusandae ipsum possimus necessitatibus rerum dicta facere!
+            </p>
+          </div>
+
+        </div>
+        <div class="feature w-10/12 sm:w-6/12 lg:w-4/12 xl:w-3/12 text-center p-5" data-aos="fade-left">
+          <div class="content bg-white shadow px-4 py-8">
+            <img class="featureImg" src="images/feature03.jpg" alt="Ustics feature">
+            <h2 class="featureHeader text-xl font-semibold my-3 color-secondary">Features</h2>
+            <p class="featureDescription text-sm text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint voluptates enim eum quidem
+              recusandae ipsum possimus necessitatibus rerum dicta facere!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Ustics Features End -->
+  <!-- Ustics Projects Start -->
+  <div id="usticsProjects" class="usticsProjects">
+    <div class="container">
+      <h2 class="projectsHeader font-bold text-center mt-24 text-4xl text-black"> Our Projects </h2>
+      <p class="projectsDescription font-semibold text-center mt-6 text-gray-700 ">
+        Read more in our learning center
+      </p>
+      <div class="allProjects flex mt-16 flex-wrap justify-center">
+        <div class="projectView w-8/12 p-4 sm:w-5/12 lg:wp-30" data-aos="flip-left" data-aos-delay="100">
+          <div class="content shadow-lg">
+            <div class="contentHeader relative">
+              <img class="contentImage w-full" src="images/programming-photo-one.jpg" alt="Ustics project" />
+              <div
+                class="shareProject text-center absolute left-0 top-0 w-full h-full bg-color-main opacity-0 transition-all ease-out duration-300 hover:opacity-75">
+                <p class="projectName text-white text-2xl font-semibold mt-16">Project Name</p>
+                <a href="javascript:void(0)" class="text-white underline">Project Link</a>
+              </div>
+            </div>
+            <div class="contentDescription px-6 py-4">
+              <h2 class="font-bold ">Project Name</h2>
+              <p class="text-gray-700 ">Project Description</p>
+            </div>
+          </div>
+        </div>
+        <div class="projectView w-8/12 p-4 sm:w-5/12 lg:wp-30" data-aos="flip-left" data-aos-delay="300">
+          <div class="content shadow-lg">
+            <div class="contentHeader relative">
+              <img class="contentImage w-full" src="images/programming-photo-two.jpg" alt="Ustics project" />
+              <div
+                class="shareProject text-center absolute left-0 top-0 w-full h-full bg-color-main opacity-0 transition-all ease-out duration-300 hover:opacity-75">
+                <p class="projectName text-white text-2xl font-semibold mt-16">Project Name</p>
+                <a href="javascript:void(0)" class="text-white underline">Project Link</a>
+              </div>
+            </div>
+            <div class="contentDescription px-6 py-4">
+              <h2 class="font-bold ">Project Name</h2>
+              <p class="text-gray-700 ">Project Description</p>
+            </div>
+          </div>
+        </div>
+        <div class="projectView w-8/12 p-4 sm:w-5/12 lg:wp-30" data-aos="flip-left" data-aos-delay="500">
+          <div class="content shadow-lg">
+            <div class="contentHeader relative">
+              <img class="contentImage w-full" src="images/programming-photo-three.jpg" alt="Ustics project" />
+              <div
+                class="shareProject text-center absolute left-0 top-0 w-full h-full bg-color-main opacity-0 transition-all ease-out duration-300 hover:opacity-75">
+                <p class="projectName text-white text-2xl font-semibold mt-16">Project Name</p>
+                <a href="javascript:void(0)" class="text-white underline">Project Link</a>
+              </div>
+            </div>
+            <div class="contentDescription px-6 py-4">
+              <h2 class="font-bold ">Project Name</h2>
+              <p class="text-gray-700 ">Project Description</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Ustics Projects End -->
+  <!-- Ustics ContactUs Start -->
+  <div id="usticsContactUs" class="usticsContactUs relative p-20 mt-16">
+    <div class="container">
+      <div class="contactUsContent flex flex-wrap justify-around items-center">
+        <div class="formContent w-4/12">
+          <h2 class="formHeader font-medium text-5xl color-secondary">Drop us a line </h2>
+          <form action="" class="contactUs">
+            <label for="name" class="text-gray-700">Your name:</label>
+            <input id="name" autocomplete="off" data-aos="fade-right" data-aos-delay="100"
+              class="formData block  p-4 bg-gray-100 my-4 w-full" type="text" >
+            <label for="mail" class="text-gray-700">Your Email: </label>
+            <input id="mail" data-aos="fade-right" data-aos-delay="300"
+              class="formData block  p-4 bg-gray-100 my-4 w-full" type="email" >
+            <label for="phone"class="text-gray-700">Your phone</label>
+            <input id="phone" data-aos="fade-right" data-aos-delay="500"
+              class="formData block  p-4 bg-gray-100 my-4 w-full" type="text" >
+            <label for="message" class="text-gray-700">Your Message</label>
+            <textarea id="message" data-aos="fade-right" data-aos-delay="700"
+              class="formData block  p-4 bg-gray-100 my-4 w-full resize-none h-32" ></textarea>
+            <input
+              class="formSubmit block py-3 px-6 wp-30 mt-10 cursor-pointer duration-300 hover:bg-color-main hover:text-white"
+              type="submit" value="Submit">
+          </form>
+          <span class="contactUsSplitter">OR</span>
+          <div class="contactUsSocial">
+            <ul class="socialMediaContact">
+              <li class="link"><a href="javascript:void(0)" style="color:#3b5999"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="link"><a href="javascript:void(0)" style="color:#55acee"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="link"><a href="javascript:void(0)" style="color:#211F1F"><i class="fab fa-github"></i></a>
+              </li>
+              <li class="link"><a href="javascript:void(0)" style="color:#0077B5"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="link"><a href="tel:+201153777942" style="color:#b92b27"><i class="fas fa-phone-alt"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="formImg w-5/12">
+          <div class="imgContent"><img class="usticsAusAnimation" src="images/formImage.png" alt="astronaut say hi">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Ustics ContactUs End -->
+  <!-- Ustics Footer Start -->
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 89">
+    <path fill="#0f7cff" fill-opacity="1"
+      d="M0,19.2l30,6.6c30,6.8,90,19.8,150,16.6c60-3.3,120-23.3,180-31.6c60-8.2,120-5.1,180,1.7
+      c60,6.6,120,16.6,180,24.9c60,8.2,120,15,180,10c60-4.9,120-21.7,180-18.3s120,26.5,180,28.3c60,1.7,120-18.3,150-28.3l30-10V89h-30
+      c-30,0-90,0-150,0s-120,0-180,0s-120,0-180,0s-120,0-180,0s-120,0-180,0s-120,0-180,0s-120,0-180,0S60,89,30,89H0V19.2z">
+    </path>
+  </svg> -->
+  <footer id="usticsFooter" class="usticsFooter bg-color-main p-8">
+    <div class="container">
+      <div class="usticsCopyRight text-center">
+        <p class="text-sm text-gray-300 p-0">
+          &copy; Copyright 2020. Made With Love By Ustics
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Ustics Footer End -->
+  <!-- JS Libraries Start -->
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="js/slick.min.js"></script>
+  <!-- Parallax Background -->
+  <script src="js/parallax.min.js"></script>
+  <!-- Scroll animation -->
+  <script src="js/animatescroll.min.js"></script>
+  <!-- aos Scroll animation -->
+  <script src="js/aos.js"></script>
+  <!-- Font-Awesome -->
+  <script src="js/fontawesome.min.js"></script>
+  <!-- Text Type Animation -->
+  <script src="js/typed.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/script.js"></script>
+  <!-- JS Libraries End -->
+</body>
+
+</html>
